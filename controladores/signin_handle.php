@@ -5,10 +5,10 @@
 // 2. $_POST['població] lo mismo, se cambio a $_POST['poblacio']
 // 3. $_POST['password'] no existe, es por esto que se puede ingresar con cualquier contraseña, se cambio a $_POST['pass']
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nom = $_POST["nom"];
     $correu = $_POST["correu"];
-    $password = password_hash($_POST["pass"],PASSWORD_BCRYPT);
+    $password = password_hash($_POST["pass"], PASSWORD_BCRYPT);
     $adreca = $_POST["adreca"];
     $poblacio = $_POST["poblacio"];
     $codi_postal = $_POST["codi_postal"];
@@ -31,6 +31,3 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     //include_once __DIR__ . '/../vistas/vista_formulario.php';
 }
-?>
-
-
