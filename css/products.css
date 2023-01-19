@@ -1,0 +1,35 @@
+.product{
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+    height: 250px;
+    width: 250px;
+}
+
+.grid-container-prods{
+    display: grid;
+    grid-template-areas:
+    'auto auto auto';
+    gap: 70px;
+    background: whitesmoke;
+    justify-content: space-evenly;
+}
+
+.grid-container >div{
+    padding: 25px 0;
+    font-size: 30px;
+}
+
+body {
+    background-color: whitesmoke;
+    border-color: lightgray;
+}
+
+.product>a>img.product_img {
+    border-radius: 25px;
+    border: 2px solid sandybrown;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+

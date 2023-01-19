@@ -1,0 +1,70 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#log-in_header{
+    text-align: center;
+}
+.text_form{
+    font-size: 30px;
+    text-align: center;
+
+}
+.button1{
+    position: fixed;
+    left: 46%;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: auto;
+    /*border: #cccccc;*/
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ff8899;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button1:hover{
+    background-color: darkcyan;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
