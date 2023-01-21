@@ -14,12 +14,10 @@
         <div>
             <div class="grid-container-prods">
                 <?php foreach ($lista_productos as $producto) : ?>
-                    <div id="prod_id_<?php echo $producto['category_id'] ?>" class="product">
-                        <a class="producte" id="producte<?php echo $producto['product_id'] ?>" href="/index.php?action=detalls&prod_id=<?php echo $producto['product_id']; ?>">
-                            <img id="corners_prod" class="product_img" src="<?php echo (htmlentities($producto['image'])); ?>">
-                            <div id="detalls_producte" style="text-decoration:none; display:none">
-                            </div>
-                        </a>
+                    <div id="product<?php echo $producto['product_id'] ?>" class="product">
+                        <img id="corners_prod" class="product_img" src="<?php echo (htmlentities($producto['image'])); ?>">
+                        <div id="detalls_producte" style="text-decoration:none; display:none">
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -29,12 +27,13 @@
 
 <script>
     $(document).ready(function() {
-        $("a.producte").click(function(event) {
+        $(".product").click(function(event) {
             event.preventDefault();
-            var href = $(this).attr("href");
+            var id = parseInt($(this).attr('id').replace(this.className, ''), 10);
+            var href = "/index.php?action=detalls&prod_id=" + id;
             var img = $(this).children().eq(0);
             var detalls = $(this).children().eq(1);
-            img.toggle('slow', 'linear');
+            // img.toggle('slow', 'linear');
             detalls.load(href);
             detalls.toggle('slow', 'linear');
         });

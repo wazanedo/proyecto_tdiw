@@ -20,14 +20,13 @@
             // event.preventDefault();
         });
 
-        $("#prodcut_list").hide();
-
         $("a.a_categoria").click(function(event) {
             event.preventDefault();
             var href = $(this).attr("href");
             var item = $("#prodcut_list");
+            item.hide('fast', 'linear');
             item.load(href);
-            item.toggle('slow', 'linear');
+            item.show('slow', 'linear');
         });
     });
 </script>
