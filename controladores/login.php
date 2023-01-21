@@ -1,2 +1,2 @@
 <?php
-include_once __DIR__ . '/../vistas/vista_formulario_login.php';
+include_once __DIR__ . '/../vistas/vista_formulario_login.html';

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaki Moda</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-latest.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/css/principal.css">
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <!--<link rel="stylesheet" type="text/css" href="/css/footer.css">-->
-
+    <link rel="stylesheet" type="text/css" href="/css/detalls_producte.css">
 </head>
 
 <body>

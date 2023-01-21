@@ -13,11 +13,11 @@
     <section>
         <div>
             <div class="grid-container-prods">
-                <?php foreach ($productos_1 as $producto) : ?>
+                <?php foreach ($lista_productos as $producto) : ?>
                     <div id="prod_id_<?php echo $producto['category_id'] ?>" class="product">
                         <a class="producte" id="producte<?php echo $producto['product_id'] ?>" href="/index.php?action=detalls&prod_id=<?php echo $producto['product_id']; ?>">
                             <img id="corners_prod" class="product_img" src="<?php echo (htmlentities($producto['image'])); ?>">
-                            <div id="detalls_producte" style="text-decoration:none;">
+                            <div id="detalls_producte" style="text-decoration:none; display:none">
                             </div>
                         </a>
                     </div>
@@ -30,14 +30,13 @@
 <script>
     $(document).ready(function() {
         $("a.producte").click(function(event) {
-            $('div#prod_id_1').hide('fast', 'linear');
-            var href = $(this).attr("href");
-            var id = $(this).attr("id");
-            var element = "a#" + id + ">div#detalls_producte";
-            $(element).load(href);
-            $(element).toggle('slow', 'linear');
-
             event.preventDefault();
+            var href = $(this).attr("href");
+            var img = $(this).children().eq(0);
+            var detalls = $(this).children().eq(1);
+            img.toggle('slow', 'linear');
+            detalls.load(href);
+            detalls.toggle('slow', 'linear');
         });
     });
 </script>
