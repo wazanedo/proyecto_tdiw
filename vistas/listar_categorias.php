@@ -10,22 +10,21 @@
     <?php endforeach; ?>
 </div>
 
-<div id="prodcut_list" style="display: block">
+<div id="prodcut_list">
 </div>
 
 <script>
     $(document).ready(function() {
         $('a#llistar_cat_button').click(function(event) {
+            event.preventDefault();
             $('div.grid-container').toggle('slow', 'linear');
-            // event.preventDefault();
         });
-
-        $("#prodcut_list").hide();
 
         $("a.a_categoria").click(function(event) {
             event.preventDefault();
             var href = $(this).attr("href");
             var item = $("#prodcut_list");
+            item.hide('slow', 'linear');
             item.load(href);
             item.toggle('slow', 'linear');
         });
