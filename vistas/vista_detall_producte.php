@@ -40,12 +40,13 @@
                 success: function(result) {
                     var navLink = "/index.php?action=añadir_cesta";
                     console.log(link);
-                    //$(".nav_links").hide().load(navLink, function () {
+                    $(".nav_links").hide().load(navLink, function () {
                     //  console.log("Load nav completed")
                     //}).fadeIn(300);
                     //event.preventDefault();
                     //$("#added").show();
-                }
+                    }
+                    {
             });
             //event.preventDefault();
         })

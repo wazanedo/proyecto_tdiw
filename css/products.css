@@ -1,9 +1,10 @@
-.product {
-  display: flex;
-  justify-content: center;
-  background: whitesmoke;
-  height: 250px;
-  width: 250px;
+.product{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: whitesmoke;
+    height: 350px;
+    width: 250px;
 }
 
 .grid-container-prods {
@@ -24,11 +25,10 @@ body {
   border-color: lightgray;
 }
 
-/* .product>a>img.product_img { */
-.product_img { 
-  border-radius: 25px;
-  border: 2px solid sandybrown;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+.product_img {
+    border-radius: 25px;
+    border: 2px solid sandybrown;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }

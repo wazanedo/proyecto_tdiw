@@ -29,11 +29,9 @@
     $(document).ready(function() {
         $(".product").click(function(event) {
             event.preventDefault();
-            var id = parseInt($(this).attr('id').replace(this.className, ''), 10);
-            var href = "/index.php?action=detalls&prod_id=" + id;
-            var img = $(this).children().eq(0);
+            var id = $(this).attr('id').replace(this.className, '');
+            var href = "/index.php?action=detalls&prod_id="+id;
             var detalls = $(this).children().eq(1);
-            // img.toggle('slow', 'linear');
             detalls.load(href);
             detalls.toggle('slow', 'linear');
         });

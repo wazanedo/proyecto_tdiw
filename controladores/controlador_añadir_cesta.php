@@ -1,8 +1,8 @@
 <?php
-if (!isset($_SESSION['user_id'])) {
+if(!isset($_SESSION['user_id'])){
     echo "Inicia sesión para empezar tu compra.";
 } else { //La sessión está iniciada
-    if (!isset($_SESSION['cart'])) { //si hay artículos previos se inicializa la cesta
+    if(!isset($_SESSION['cart'])) {//si hay artículos previos se inicializa la cesta
         $_SESSION['cart']['items'] = array();
         $_SESSION['cart']['total_price'] = 0;
         $_SESSION['cart']['elems_count'] = 0;
@@ -22,16 +22,14 @@ if (!isset($_SESSION['user_id'])) {
             $i++;
         }
     }
-    if ($found) {
+    if($found) {
         $_SESSION['cart']['items'][$i]['product_quantity'] += 1;
     } else {
-        $cartProduct = array(
-            'product_id' => $product_id,
-            'product_name' => str_replace("-", " ", $product_name),
-            'product_price' => $product_price,
-            'product_img' => $product_img,
-            'product_quantity' => 1
-        );
+        $cartProduct = array('product_id'=>$product_id,
+            'product_name'=>str_replace("-", " ", $product_name),
+            'product_price'=>$product_price,
+            'product_img'=>$product_img,
+            'product_quantity'=>1);
 
         array_push($_SESSION['cart']['items'], $cartProduct);
     }
@@ -39,5 +37,5 @@ if (!isset($_SESSION['user_id'])) {
     $_SESSION['cart']['total_price'] += $product_price;
     $_SESSION['cart']['elems_count'] += 1;
 
-    require_once __DIR__ . '/../controladores/controlador_detalls_producte.php';
+    require_once __DIR__ .'/../controladores/controlador_detalls_producte.php';
 }
