@@ -4,10 +4,11 @@
     echo('wdwdwdwd');
     //echo($_POST ['correu']);
 }*/
+
 session_start();
 $accio = $_GET['action'] ?? NULL; //echo($accio);
 switch ($accio) {
-        // productos
+        // productos´´
     case 'llistaProd':
         include_once __DIR__ . '/recursos/recurso_listar_productos_1.php';
         break;
@@ -33,7 +34,6 @@ switch ($accio) {
     case 'profile':
         require __DIR__ . '/recursos/recurso_profile.php';
         break;
-        // cesta
     case 'anadir_cesta':
         include_once __DIR__ . '/recursos/recurso_anadir_cesta.php';
         break;

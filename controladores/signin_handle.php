@@ -8,7 +8,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nom = $_POST["nom"];
     $correu = $_POST["correu"];
-    $password = password_hash($_POST["pass"], PASSWORD_BCRYPT);
+    $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
     $adreca = $_POST["adreca"];
     $poblacio = $_POST["poblacio"];
     $codi_postal = $_POST["codi_postal"];

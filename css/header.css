@@ -11,6 +11,9 @@ header {
   width: 100%;
   background: #252932;
   margin-bottom: 20px;
+  padding: 1px;
+  position: fixed;
+  top: 0;
 }
 
 .wrapper {
