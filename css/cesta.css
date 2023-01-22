@@ -1,0 +1,11 @@
+/* css properties for table,thead,th,tr,td */
+table,
+thead,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}

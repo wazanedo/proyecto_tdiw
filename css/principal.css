@@ -1,81 +1,79 @@
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.sign_in{
-    background-color: black;
-    border: orange;
-    color: orange;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.sign_in {
+  background-color: black;
+  border: 2px solid transparent;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 body {
-    background-color: whitesmoke;
-    border-color: lightgray;
+  background-color: whitesmoke;
+  border-color: lightgray;
 }
 
-html{
-    background-color: blanchedalmond;
+html {
+  background-color: blanchedalmond;
 }
 
-h1.name_categoria{
-    color: sandybrown;
+h1.name_categoria {
+  color: sandybrown;
 }
 #categoria {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
-#categoria:visited{
-    color: sandybrown;
+#categoria:visited {
+  color: sandybrown;
 }
 
-.img_categoria{
-    width: 250px;
-    height: 275px;
+.img_categoria {
+  width: 250px;
+  height: 275px;
 }
 
-.categoria1{
-    grid-area: categoria1;
+.categoria1 {
+  grid-area: categoria1;
 }
-.categoria2{
-    grid-area: categoria2;
+.categoria2 {
+  grid-area: categoria2;
 }
-.categoria3{
-    grid-area: categoria3;
-}
-
-.grid-container{
-    display: grid;
-    justify-content: center;
-    grid-template-areas:
-    'categoria1 categoria2 categoria3';
-    gap: 10px;
-    background: whitesmoke;
+.categoria3 {
+  grid-area: categoria3;
 }
 
-.grid-container>div{
-    background: whitesmoke;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "categoria1 categoria2 categoria3";
+  gap: 10px;
+  background: whitesmoke;
 }
 
-.title_categoria{
-    color: sandybrown;
+.grid-container > div {
+  background: whitesmoke;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
 }
 
-div.grid-container>div>a>img{
-    border-radius: 25px;
-    border: 2px solid sandybrown;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+.title_categoria {
+  color: sandybrown;
 }
 
+div.grid-container > div > a > img {
+  border-radius: 25px;
+  border: 2px solid sandybrown;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}

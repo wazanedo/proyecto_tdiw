@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaki Moda</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-latest.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/css/principal.css">
     <link rel="stylesheet" type="text/css" href="/css/header.css">
-    <!--<link rel="stylesheet" type="text/css" href="/css/footer.css">-->
     <link rel="stylesheet" type="text/css" href="/css/detalls_producte.css">
     <link rel="stylesheet" type="text/css" href="/css/header_desplegable.css">
+    <!-- add products.css -->
     <link rel="stylesheet" type="text/css" href="/css/products.css">
+    <!-- add cesta.css -->
+    <link rel="stylesheet" type="text/css" href="/css/cesta.css">
 </head>
 
 <body>
@@ -41,16 +42,15 @@
                 <?php } else { ?>
                     <a href="index.php?action=signin" class="sign_in">Sign In</a>
                 <?php } ?>
-                <a id="llistar_cat_button" class="sign_in">Llistar Categories</a>
+                <!-- enlace a inicio -->
+                <a href="index.php" class="sign_in">Inicio</a>
             </nav>
         </div>
     </header>
-    <section class="contenido wrapper">
-
-        <div class="cateogrias">
-            <?php include __DIR__ . '/../controladores/listar_categorias.php'; ?>
+    <section>
+        <div class="contenido wrapper">
+            <?php include __DIR__ . '/../controladores/mostrar_cesta.php'; ?>
         </div>
-
     </section>
 </body>
 

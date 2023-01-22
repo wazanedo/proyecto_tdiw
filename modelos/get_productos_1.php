@@ -1,7 +1,11 @@
 <?php
-function consultaProductos1($dbconn, $CategoriaId)
+
+include_once __DIR__ . '/conectaBD.php';
+
+function consultaProductos1($categoria_id)
 {
-    $result = pg_query($dbconn, "select * from producto where category_id='$CategoriaId'");
+    $conexion = conectaBD();
+    $result = pg_query($conexion, "select * from producto where category_id='$categoria_id'");
     $resultado_query = pg_fetch_all($result);
     return ($resultado_query);
 }
