@@ -1,4 +1,5 @@
-<table>
+<?php if(isset($_SESSION['cart'])) { ?>
+    <table>
     <thead>
         <th>Imagen</th>
         <th>Producto</th>
@@ -21,3 +22,9 @@
         <td colspan="2"><?= $_SESSION['cart']['total_price'] ?>€</td>
     </tr>
 </table>
+
+<a href="index.php?action=guardar_cesta">Guardar cesta</a>
+
+<?php } else { ?>
+    <p>Cesta vacia!</p>
+<?php } ?>
