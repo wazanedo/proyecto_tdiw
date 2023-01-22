@@ -1,11 +1,11 @@
-<!-- Cambios -->
-<!-- 1. No hace falta "$cat_id", removido -->
-
 <?php
-function getDetalls($dbconn, $id)
+
+include_once __DIR__ . '/conectaBD.php';
+
+function getDetalls($id)
 {
-    $result = pg_query($dbconn, "select * from producto where product_id='$id'");
+    $conexion = conectaBD();
+    $result = pg_query($conexion, "select * from producto where product_id='$id'");
     $resultado_query = pg_fetch_all($result);
-    return ($resultado_query);
+    return $resultado_query;
 }
-?>
