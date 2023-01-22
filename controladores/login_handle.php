@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user) {
         $_SESSION['user'] = $user['name_user'];
+        $_SESSION['user_id'] = $user['user_id'];
         echo '<script text= "text/javascript"> alert("¡La sessión ha sido iniciada correctamente!");
         document.location.href="index.php";
         </script>';
