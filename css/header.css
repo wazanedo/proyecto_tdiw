@@ -11,7 +11,6 @@ header {
   width: 100%;
   background: #252932;
   margin-bottom: 20px;
-  padding: 1px;
   position: fixed;
   top: 0;
 }
@@ -23,6 +22,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+.contenido {
+  width: 100%;
+  padding: 200px 0 0 0;
+  text-align: center;
+}
+
 header .logo1 {
   color: #f2f2f2;
   padding: 50px 0;

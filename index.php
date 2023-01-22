@@ -43,6 +43,9 @@ switch ($accio) {
     case 'vaciar_cesta':
         require __DIR__ . '/recursos/recurso_vaciar_cesta.php';
         break;
+    case 'guardar_cesta':
+        require __DIR__ . '/recursos/recurso_guardar_cesta.php';
+        break;
         // home
     default:
         include_once __DIR__ . '/recursos/resource_listar_categorias.php';
